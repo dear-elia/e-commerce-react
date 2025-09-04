@@ -15,13 +15,13 @@ export const Navbar = () => {
         <Link to='/'><img src={logo} alt=""/></Link>
       </div>
       <ul className='nav-menu'>
-        <li onClick={()=>{setMenu("new")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/new'>NEW</Link>{menu=="new"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("best")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/best'>BEST</Link>{menu=="best"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("dress")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/dress'>DRESS</Link>{menu=="dress"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("outer")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/outer'>OUTER</Link>{menu=="outer"?<hr/>:<></>}</li> 
-        <li onClick={()=>{setMenu("top")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/top'>TOP</Link>{menu=="top"?<hr/>:<></>}</li> 
-        <li onClick={()=>{setMenu("acc/bag")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/acc/bag'>ACC/BAG</Link>{menu=="acc/bag"?<hr/>:<></>}</li> 
-        <li onClick= {()=>{setMenu("shoes")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/shoes'>SHOES</Link>{menu=="shoes"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("new")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/new'>NEW</Link>{menu==="new"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("best")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/best'>BEST</Link>{menu==="best"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("dress")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/dress'>DRESS</Link>{menu==="dress"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("outer")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/outer'>OUTER</Link>{menu==="outer"?<hr/>:<></>}</li> 
+        <li onClick={()=>{setMenu("top")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/top'>TOP</Link>{menu==="top"?<hr/>:<></>}</li> 
+        <li onClick={()=>{setMenu("acc/bag")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/acc/bag'>ACC/BAG</Link>{menu==="acc/bag"?<hr/>:<></>}</li> 
+        <li onClick= {()=>{setMenu("shoes")}}><Link style={{textDecoration: 'none', color: '#e86b67'}} to='/shoes'>SHOES</Link>{menu==="shoes"?<hr/>:<></>}</li>
       </ul>
       <div className='nav-login-cart'>
         <ul className='nav-login-list'>
