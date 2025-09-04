@@ -1,113 +1,79 @@
-/* General reset for all elements */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    color: #333;
-    font-family: 'Lora', 'NotoSansKR', Malgun Gothic, '맑은 고딕', AppleGothic, Dotum, '돋움', sans-serif;
-    font-size: 12px;
-    line-height: 1.6;
-    vertical-align: baseline;
+@font-face {
+    font-family: 'TanMonCheri';
+    src: url('../Assets/fonts/tan-mon-cheri.ttf') format('truetype');
+    font-style: normal;
 }
-
-/* Universal box-sizing for all elements */
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-
-/* General body styling */
-body {
-    line-height: 1.6;
-    font-size: 14px; /* Adjusted font size for readability */
-}
-
-/* Styling for the Wrapper */
-#wrapper {
-    position: relative;
-    min-width: 1300px; /* Ensures the content doesn't go below this width */
-    text-align: left;
-}
-
-/* React Component Specific */
-.navbar {
+.navbar{
     display: flex;
-    flex-direction: column; /* Ensures stacking of navigation bars vertically */
-    width: 100%;
-}
-
-.top-bar {
-    display: flex;
-    justify-content: space-between; /* Spacing out the elements within the top bar */
-    align-items: center; /* Vertically center the items */
+    justify-content: space-around;
     padding: 16px;
-    box-sizing: border-box;
-    width: 100%; /* Ensures full width for the top bar */
+    box-shadow: 0 1px 3px -2px black;
+    font-family: 'TanMonCheri', sans-serif;
 }
 
-.top-bar h1 {
-    font-size: 40px;
-    font-weight: 400;
-    color: darksalmon;
-    flex: 1; /* To center the text */
-    text-align: center;
-}
-
-.top-bar ul {
+.nav-logo img{
+    width: 200px;
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: darksalmon;
-    font-size: 17px;
-    font-weight: 300;
-}
-
-.top-bar li {
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
 }
 
-.bottom-bar {
+.nav-menu{
     display: flex;
-    width: 100%;
-    padding: 10px 0;
-    justify-content: center; /* Center the entire bottom-bar */
-}
-
-.bottom-bar ul:first-child {
-    display: flex;
-    justify-content: center; /* Center KIDS, WOMAN, MEN items horizontally */
-    gap: 20px;
+    align-items: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    color: darksalmon;
-    font-size: 17px;
+    gap: 30px;
+    color: #e86b67;
+    font-size: 16px;
     font-weight: 300;
-}
-
-.bottom-bar ul:last-child {
-    display: flex;
-    justify-content: flex-start; /* Aligns IC items to the left */
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: darksalmon;
-    font-size: 17px;
-    font-weight: 300;
-}
-
-.bottom-bar li {
-    font-size: 18px;
-    font-weight: 400;
     cursor: pointer;
-    color: darksalmon;
+    margin-top: 35px;
+}
+.nav-menu hr{
+    border:none;
+    width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background: #e86b67;
 }
 
-.bottom-bar li:hover,
-.top-bar li:hover {
-    text-decoration: underline;
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-login-cart img{
+    width: 27px;
+    height: 27px;
+    margin-top: 9px;
+    margin-left: -16px;
+}
+
+.nav-login-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    color: #e86b67;
+    font-size: 12px;
+    margin-top: 27px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.nav-cart-count{
+    width: 13px;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -37px;
+    border-radius: 11px;
+    font-size: 7px;
+    font-weight: 800;
+    background: red;
+    color: white;
 }
