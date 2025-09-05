@@ -2,7 +2,7 @@
 .carousel-container {
     width: 100%;
     height: 400px;  /* Adjust to your preferred height */
-    margin-left: 250px;
+    margin-left: 150x;
    
   }
   
@@ -15,7 +15,7 @@
   .slick-dots {
     position: absolute;
     bottom: 10px;  /* Position the dots near the bottom of the carousel */
-    left: 40%;     /* Move the dots container to the center horizontally */
+    left: 50%;     /* Move the dots container to the center horizontally */
     transform: translateX(-50%); /* Adjust by 50% of its own width to truly center */
     display: flex; /* Display dots horizontally */
     justify-content: center; /* Align dots horizontally */

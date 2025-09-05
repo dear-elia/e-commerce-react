@@ -1,0 +1,26 @@
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100px;
+    
+}
+
+.review h1{
+    font-family: 'TanMonCheri', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    opacity: 0.6;
+    color: #e86b67;
+}
+
+.item-review{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #00000099;
+}
+

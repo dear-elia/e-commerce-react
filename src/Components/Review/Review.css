@@ -1,0 +1,14 @@
+.review-item{
+    width: 350px;
+}
+
+.review-item img{
+    width: 100%;          /* make image fit the item width */
+    height: 450px;        /* fixed height for uniformity */
+    object-fit: cover;    /* crop/scale image without stretching */
+}
+
+.review-item img:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
