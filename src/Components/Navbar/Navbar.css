@@ -4,7 +4,7 @@
     font-style: normal;
 }
 .navbar{
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: space-around;
     padding: 16px;
@@ -14,7 +14,7 @@
 
 .nav-logo img{
     width: 160px;
-    margin-top: -10px;
+    margin-top: -17px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -30,7 +30,7 @@
     font-size: 13px;
     font-weight: 300;
     cursor: pointer;
-    margin-top: 28px;
+    margin-top: 30px;
 }
 .nav-menu hr{
     border:none;

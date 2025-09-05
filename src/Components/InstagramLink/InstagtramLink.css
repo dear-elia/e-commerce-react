@@ -1,29 +1,39 @@
-.insta-link{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    margin-top: 100px;
-}
-.insta-link h1{
+/* Reset odds of mysterious spacing */
+* { box-sizing: border-box; }
+.insta-link h1 { 
+    margin: 80px 0 20px; 
     font-family: 'TanMonCheri', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 100;
     opacity: 0.6;
     color: #e86b67;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.item-insta{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-    gap: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    color: #00000099;
+/* 4 per row, no gaps */
+.item-insta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;                 /* no space */
+  width: 100%;
 }
 
-.item-insta .item {
-    margin: 0;      /* remove any default margin */
-    padding: 0;     /* remove padding inside item */
+/* Square tiles that crop images nicely */
+.ig-item {
+  position: relative;
+  aspect-ratio: 1 / 1;    /* perfect square */
+  overflow: hidden;
+  margin: 0;              /* prevent figure default margins */
 }
 
+.ig-item img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* fills square without distortion */
+  display: block;         /* removes inline whitespace gap */
+  border: 0;
+}
